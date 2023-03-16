@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Banner.scss';
+import './Banner.scss';
 import Share from '../../../assets/img/share.png';
 import Mail from '../../../assets/img/mail.png';
 import Support from '../../../assets/img/support.png';

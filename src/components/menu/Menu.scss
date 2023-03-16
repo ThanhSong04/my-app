@@ -1,0 +1,29 @@
+nav#menu {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  text-align: center;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+ul {
+  list-style: none;
+}
+#menu {
+  button {
+    padding: 31px 2px;
+    font-size: 20px;
+    font-weight: 900;
+    /* color: #f50057; */
+    /* border: 2px solid #f50057; */
+    cursor: pointer;
+    width: max-content;
+    transition: 0.25s ease;
+    outline: none;
+    margin-bottom: 10px;
+    &:hover {
+      border-radius: 25px;
+      background: #ff0054;
+    }
+  }
+}

@@ -98,7 +98,13 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="FooterBottom"></div>
+      <div className="FooterBottom">
+        <p>
+          ©2020 Gameloft. All rights reserved. Gameloft and the Gameloft logo are trademarks of Gameloft in the U.S.
+          and/or other countries. <br />
+          All other trademarks are the property of their respective owners.
+        </p>
+      </div>
     </div>
   );
 }
