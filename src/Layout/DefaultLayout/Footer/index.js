@@ -37,7 +37,9 @@ function Footer() {
               <div className="language">
                 <img src={language} />
                 <select name="language" id="language">
-                  <option value="english">English</option>
+                  <option className="abc" value="english">
+                    English
+                  </option>
                   <option value="vietnamese">Vietnamese</option>
                   <option value="korean">Korean</option>
                 </select>

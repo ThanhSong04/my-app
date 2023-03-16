@@ -71,11 +71,29 @@
     color: #000;
   }
 }
+.wrapperEventsPromotions .InfiniteCarouselArrow {
+  top: 110% !important;
+}
+.wrapperEventsPromotions .InfiniteCarouselArrowPrev {
+  left: 40%;
+}
+.wrapperEventsPromotions .InfiniteCarouselArrowNext {
+  right: 40%;
+}
 @media (max-width: 676px) {
   .EventsPromotionsTitle {
     top: 60px;
   }
   .SliderItemImg {
     height: 300px;
+  }
+  .wrapperEventsPromotions .InfiniteCarouselArrow {
+    top: 117% !important;
+  }
+  .wrapperEventsPromotions .InfiniteCarouselArrowPrev {
+    left: 30%;
+  }
+  .wrapperEventsPromotions .InfiniteCarouselArrowNext {
+    right: 25%;
   }
 }

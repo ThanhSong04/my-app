@@ -46,7 +46,7 @@ function EventsPromotions() {
         ]}
         animationDuration={1000}
         dots={true}
-        // paging={true}
+        paging={true}
         // pagingSeparator
         swipe={false}
         showSides={true}

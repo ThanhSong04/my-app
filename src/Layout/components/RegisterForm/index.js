@@ -54,16 +54,14 @@ function RegisterForm() {
             </select>
             <div className="CheckBoxItem">
               <input type="checkbox" placeholder="January" {...register('January', {})} className="mx-3" />
-              <label htmlFor="">
+              <p>
                 By signing up, I confirm that I am 13 years old or older. I agree to the Gameloft Terms and Conditions
                 and I have read the Privacy Policy.
-              </label>
+              </p>
             </div>
             <div className="CheckBoxItem">
               <input type="checkbox" placeholder="January" {...register('January', {})} className="mx-3" />
-              <label htmlFor="">
-                I agree to receive promotional offers relating to all Gameloft games and services.
-              </label>
+              <p>I agree to receive promotional offers relating to all Gameloft games and services.</p>
             </div>
             <div className="CheckBoxSubmit">
               <input type="submit" />
