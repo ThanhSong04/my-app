@@ -46,14 +46,18 @@ function EventsPromotions() {
         ]}
         animationDuration={1000}
         dots={true}
+        // paging={true}
+        // pagingSeparator
+        swipe={false}
         showSides={true}
-        sideSize={1}
         slidesToScroll={4}
         slidesToShow={4}
-        scrollOnDevice={true}
+        sideSize={1}
+        // scrollOnDevice={true}
         autoCycle={true}
         className="WrapperSlider"
         cycleInterval={3000}
+        slidesSpacing={5}
       >
         {sliderItem.map((item, index) => (
           <div key={index} className="SliderItem">
