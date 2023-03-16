@@ -14,8 +14,6 @@ ul {
     padding: 31px 2px;
     font-size: 20px;
     font-weight: 900;
-    /* color: #f50057; */
-    /* border: 2px solid #f50057; */
     cursor: pointer;
     width: max-content;
     transition: 0.25s ease;
@@ -23,6 +21,9 @@ ul {
     margin-bottom: 10px;
     &:hover {
       border-radius: 25px;
+      background: #ff0054;
+    }
+    &:focus {
       background: #ff0054;
     }
   }
