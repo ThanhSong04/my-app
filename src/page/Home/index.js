@@ -1,38 +1,20 @@
-import React from 'react';
-import { RadioChangeEvent } from 'antd';
-import { Carousel, Radio } from 'antd';
-import { DotPosition } from 'antd/es/carousel';
+import React, { useState } from 'react';
 import Banner from '../../Layout/components/Banner';
 import RegisterForm from '../../Layout/components/RegisterForm';
 import EventsPromotions from '../../Layout/components/EventsPromotions';
 import './Home.scss';
 import Footer from '../../Layout/DefaultLayout/Footer';
 import Menu from '../../components/menu';
-import Card from '../../components/card';
+import Section from '../../components/section';
 
 function Home() {
-  // console.log('Carousel', Carousel);
   return (
     <>
       <Menu />
-      <Card card="1" component={<Banner />} />
-      <Card card="2" component={<RegisterForm />} />
-      <Card card="3" component={<EventsPromotions />} />
-      <Card card="4" component={<Footer />} />
-      {/* <Carousel dotPosition="right" dots easing="easing" effect>
-        <Banner />
-        <RegisterForm />
-        <EventsPromotions />
-        <Footer />
-      </Carousel> */}
-
-      {/* <Banner />
-      <div className="BgSubColor">
-        <RegisterForm />
-      </div>
-      <div className="BgSubColor">
-        <EventsPromotions />
-      </div> */}
+      <Section card="1" component={<Banner />} />
+      <Section card="2" component={<RegisterForm />} />
+      <Section card="3" component={<EventsPromotions />} />
+      <Section card="4" component={<Footer />} />
     </>
   );
 }

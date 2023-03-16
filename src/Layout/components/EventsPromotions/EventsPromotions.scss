@@ -44,12 +44,6 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.SliderItem:hover .ItemContent {
-  top: 0;
-  transition: 400ms ease-in-out;
-  background-color: #8a1445;
-  opacity: 0.8;
-}
 .ItemHeading {
   .Heading {
     display: flex;
@@ -69,12 +63,27 @@
         border-bottom: 2px solid $white;
       }
     }
-    img {
+    .SliderIcon {
+      display: none;
       width: 30px;
       height: 30px;
+      transition: 800ms ease-in-out;
     }
   }
 }
+.SliderItem:hover {
+  .ItemContent {
+    top: 0;
+    transition: 400ms ease-in-out;
+    background-color: #8a1445;
+    opacity: 0.8;
+    border-radius: 4px;
+  }
+  .SliderIcon {
+    display: block;
+  }
+}
+
 .ItemBtn {
   display: block;
   width: 100%;
@@ -115,5 +124,30 @@
   }
   .wrapperEventsPromotions .InfiniteCarouselArrowNext {
     right: 25%;
+  }
+  .ItemContent {
+    .Heading {
+      h3 {
+        font-size: 12px;
+        &:before {
+          width: 60px;
+          border-bottom: 2px solid $white;
+        }
+      }
+
+      .SliderIcon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    p {
+      font-size: 14px;
+    }
+    .ItemBtn {
+      height: 38px;
+      line-height: 38px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
   }
 }
