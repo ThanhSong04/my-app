@@ -44,7 +44,7 @@ function EventsPromotions() {
             },
           },
         ]}
-        animationDuration={1000}
+        // animationDuration={1000}
         dots={true}
         paging={true}
         // pagingSeparator
@@ -56,7 +56,7 @@ function EventsPromotions() {
         // scrollOnDevice={true}
         autoCycle={true}
         className="WrapperSlider"
-        cycleInterval={3000}
+        // cycleInterval={3000}
         slidesSpacing={5}
       >
         {sliderItem.map((item, index) => (
