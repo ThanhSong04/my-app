@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.79a773c1.css",
-    "main.js": "/my-app/static/js/main.1cad3752.js",
+    "main.css": "/my-app/static/css/main.2d979ac4.css",
+    "main.js": "/my-app/static/js/main.6dee8350.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/section1-bg.jpg": "/my-app/static/media/section1-bg.5557870a324f658ac404.jpg",
     "static/media/events_promotions1.png": "/my-app/static/media/events_promotions1.a99eb304b9a2d490abb3.png",
@@ -10,12 +10,12 @@
     "static/media/ImgRegister.png": "/my-app/static/media/ImgRegister.35cfbaea91a3c481d911.png",
     "static/media/GangstarVegasJessie.png": "/my-app/static/media/GangstarVegasJessie.8ac3ddcd2ebc1046c728.png",
     "index.html": "/my-app/index.html",
-    "main.79a773c1.css.map": "/my-app/static/css/main.79a773c1.css.map",
-    "main.1cad3752.js.map": "/my-app/static/js/main.1cad3752.js.map",
+    "main.2d979ac4.css.map": "/my-app/static/css/main.2d979ac4.css.map",
+    "main.6dee8350.js.map": "/my-app/static/js/main.6dee8350.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79a773c1.css",
-    "static/js/main.1cad3752.js"
+    "static/css/main.2d979ac4.css",
+    "static/js/main.6dee8350.js"
   ]
 }
