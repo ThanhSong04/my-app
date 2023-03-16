@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.2d979ac4.css",
-    "main.js": "/my-app/static/js/main.6dee8350.js",
+    "main.css": "/my-app/static/css/main.e92f80a3.css",
+    "main.js": "/my-app/static/js/main.5fe98e3c.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
+    "static/media/events_promotions4.jpg": "/my-app/static/media/events_promotions4.654a115e65e7d2ded65a.jpg",
     "static/media/section1-bg.jpg": "/my-app/static/media/section1-bg.5557870a324f658ac404.jpg",
     "static/media/events_promotions1.png": "/my-app/static/media/events_promotions1.a99eb304b9a2d490abb3.png",
     "static/media/events_promotions2.png": "/my-app/static/media/events_promotions2.abd93db0819105a3987c.png",
@@ -10,12 +11,12 @@
     "static/media/ImgRegister.png": "/my-app/static/media/ImgRegister.35cfbaea91a3c481d911.png",
     "static/media/GangstarVegasJessie.png": "/my-app/static/media/GangstarVegasJessie.8ac3ddcd2ebc1046c728.png",
     "index.html": "/my-app/index.html",
-    "main.2d979ac4.css.map": "/my-app/static/css/main.2d979ac4.css.map",
-    "main.6dee8350.js.map": "/my-app/static/js/main.6dee8350.js.map",
+    "main.e92f80a3.css.map": "/my-app/static/css/main.e92f80a3.css.map",
+    "main.5fe98e3c.js.map": "/my-app/static/js/main.5fe98e3c.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d979ac4.css",
-    "static/js/main.6dee8350.js"
+    "static/css/main.e92f80a3.css",
+    "static/js/main.5fe98e3c.js"
   ]
 }
