@@ -109,6 +109,9 @@
 .wrapperEventsPromotions .InfiniteCarouselArrowNext {
   right: 40%;
 }
+.wrapperEventsPromotions .InfiniteCarouselDots {
+  bottom: -62px;
+}
 @media (max-width: 676px) {
   .EventsPromotionsTitle {
     top: 60px;
@@ -123,7 +126,7 @@
     left: 30%;
   }
   .wrapperEventsPromotions .InfiniteCarouselArrowNext {
-    right: 25%;
+    right: 28%;
   }
   .ItemContent {
     .Heading {
