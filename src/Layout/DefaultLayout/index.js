@@ -7,7 +7,6 @@ import ScrollTo from 'react-scroll-into-view';
 import './DefaultLayout.scss';
 import Header from './Header';
 function DefaultLayout({ children }) {
-  const PublicURL = process.env.PUBLIC_URL;
   let [sectionId, setSectionId] = useState(1);
   const decrease = () => {
     sectionId--;
