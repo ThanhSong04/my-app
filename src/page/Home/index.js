@@ -4,7 +4,7 @@ import Banner from '../../components/Banner';
 import RegisterForm from '../../components/RegisterForm';
 import EventsPromotions from '../../components/EventsPromotions';
 import Footer from '../../Layout/DefaultLayout/Footer';
-import Section from '../../components/section';
+import Section from '../../components/Section';
 import Exclusive from '../../components/Exclusive';
 
 function Home() {

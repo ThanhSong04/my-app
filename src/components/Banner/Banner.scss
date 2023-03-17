@@ -45,19 +45,7 @@
 .DescriptionContent {
   color: #fff;
 }
-.Social {
-  list-style: none;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-.SocialItem img {
-  cursor: pointer;
-  &:hover {
-    opacity: 0.5;
-  }
-}
+
 .WrapperStore {
   position: relative;
   height: 10%;

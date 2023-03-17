@@ -12,7 +12,7 @@ function Banner() {
               <div className="description__action">
                 <span>Racing / Action</span>
                 <div className="rating">
-                  <img src={PublicURL + '/rating.png'} alt="Rating" />
+                  <img src={PublicURL + '/rating.png'} alt="" />
                 </div>
               </div>
             </div>
@@ -21,17 +21,6 @@ function Banner() {
               to follow guidelines and who cannot accept the status quo.
             </div>
           </div>
-          <ul className="Social">
-            <li className="SocialItem">
-              <img src={PublicURL + '/share.png'} />
-            </li>
-            <li className="SocialItem">
-              <img src={PublicURL + '/mail.png'} />
-            </li>
-            <li className="SocialItem">
-              <img src={PublicURL + '/support.png'} />
-            </li>
-          </ul>
         </div>
       </div>
       <div className="WrapperStore">
@@ -39,13 +28,13 @@ function Banner() {
           <span className="StoreDownload">Download latest version</span>
           <div className="StoreTrademark">
             <div className="TrademarkItem">
-              <img src={PublicURL + '/nintendo.png'} alt="nintendo" />
+              <img src={PublicURL + '/nintendo.png'} alt="" />
             </div>
             <div className="TrademarkItem">
-              <img src={PublicURL + '/microsoft.png'} alt="Microsoft" />
+              <img src={PublicURL + '/microsoft.png'} alt="" />
             </div>
             <div className="TrademarkItem">
-              <img src={PublicURL + '/steam.png'} alt="steam" />
+              <img src={PublicURL + '/steam.png'} alt="" />
             </div>
           </div>
         </div>

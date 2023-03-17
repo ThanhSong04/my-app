@@ -16,21 +16,21 @@ function Footer() {
                 <span className="us__title">Follow Us</span>
                 <ul className="footer__social">
                   <li className="footer__social__item">
-                    <img src={PublicURL + '/footer_facebook.png'} />
+                    <img src={PublicURL + '/footer_facebook.png'} alt="" />
                   </li>
                   <li className="footer__social__item">
-                    <img src={PublicURL + '/footer_linkedin.png'} />
+                    <img src={PublicURL + '/footer_linkedin.png'} alt="" />
                   </li>
                   <li className="footer__social__item">
-                    <img src={PublicURL + '/footer_twitter.png'} />
+                    <img src={PublicURL + '/footer_twitter.png'} alt="" />
                   </li>
                   <li className="footer__social__item">
-                    <img src={PublicURL + '/footer_youtube.png'} />
+                    <img src={PublicURL + '/footer_youtube.png'} alt="" />
                   </li>
                 </ul>
               </div>
               <div className="language">
-                <img src={PublicURL + '/footer_language.png'} />
+                <img src={PublicURL + '/footer_language.png'} alt="" />
                 <select name="language" id="language">
                   <option className="abc" value="english">
                     English
@@ -45,25 +45,25 @@ function Footer() {
                 <h3 className="links__other__title">visit</h3>
                 <ul className="link__list">
                   <li className="link__list__item">
-                    <a href="#">Gameloft Games</a>
+                    <a href="/">Gameloft Games</a>
                   </li>
                   <li className="link__list__item">
-                    <a href="#">Gameloft Careers </a>
+                    <a href="/">Gameloft Careers </a>
                   </li>
                   <li className="link__list__item">
-                    <a href="#">Gameloft News</a>
+                    <a href="/">Gameloft News</a>
                   </li>
                   <li className="link__list__item">
-                    <a href="#">Gameloft Forum</a>
+                    <a href="/">Gameloft Forum</a>
                   </li>
                   <li className="link__list__item">
-                    <a href="#">Gameloft Corporate</a>
+                    <a href="/">Gameloft Corporate</a>
                   </li>
                   <li className="link__list__item">
-                    <a href="#">Gameloft Advertising</a>
+                    <a href="/">Gameloft Advertising</a>
                   </li>
                   <li className="link__list__item">
-                    <a href="#">Gameloft Support</a>
+                    <a href="/">Gameloft Support</a>
                   </li>
                 </ul>
               </div>
@@ -71,25 +71,25 @@ function Footer() {
                 <h3 className="links__other__title">LEGAL</h3>
                 <ul className="link__list">
                   <li className="link__list__item">
-                    <a href="#"> Terms of Use</a>
+                    <a href="/"> Terms of Use</a>
                   </li>
                   <li className="link__list__item">
-                    <a href="#">Privacy Policy</a>
+                    <a href="/">Privacy Policy</a>
                   </li>
                   <li className="link__list__item">
-                    <a href="#">Cookies Policy</a>
+                    <a href="/">Cookies Policy</a>
                   </li>
                   <li className="link__list__item">
-                    <a href="#">EULA</a>
+                    <a href="/">EULA</a>
                   </li>
                   <li className="link__list__item">
-                    <a href="#">Legal Notices</a>
+                    <a href="/">Legal Notices</a>
                   </li>
                   <li className="link__list__item">
-                    <a href="#">Event Rules</a>
+                    <a href="/">Event Rules</a>
                   </li>
                   <li className="link__list__item">
-                    <a href="#">Business Contacts</a>
+                    <a href="/">Business Contacts</a>
                   </li>
                 </ul>
               </div>

@@ -34,7 +34,11 @@
   right: 36px;
   width: 40px;
   height: 42px;
+  background-color: transparent;
+  outline: none;
+  border: none;
   &:hover {
+    cursor: pointer;
     opacity: 0.5;
   }
 }

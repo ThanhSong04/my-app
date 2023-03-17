@@ -1,5 +1,7 @@
 import React from 'react';
 import InfiniteCarousel from 'react-leaf-carousel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShareNodes } from '@fortawesome/free-solid-svg-icons';
 import 'react-circular-progressbar/dist/styles.css';
 import './EventsPromotions.scss';
 function EventsPromotions() {
@@ -53,12 +55,15 @@ function EventsPromotions() {
         {sliderItem.map((item, index) => (
           <div key={index} className="SliderItem">
             <div className="SliderItemImg">
-              <img alt="Picture 1" src={PublicURL + item.img} />
+              <img alt="" src={PublicURL + item.img} />
               <div className="ItemContent">
                 <div className="ItemHeading">
                   <div className="Heading">
                     <h3>short title here</h3>
-                    <img className="SliderIcon" src={PublicURL + '/share.png'} />
+                    <i className="SliderSocial">
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
+                    {/* <img alt="" className="SliderIcon" src={PublicURL + '/share.png'} /> */}
                   </div>
                   <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -73,20 +78,6 @@ function EventsPromotions() {
           </div>
         ))}
       </InfiniteCarousel>
-      <div className="Circular">
-        {/* <div style={{ width: '20px', height: '20px' }}>
-          <CircularProgressbar value={0.66} maxValue={1} text={`${0.66 * 100}%`} />
-        </div>
-        <div style={{ width: '20px', height: '20px' }}>
-          <CircularProgressbar value={0.66} maxValue={1} text={`${0.66 * 100}%`} />
-        </div>
-        <div style={{ width: '20px', height: '20px' }}>
-          <CircularProgressbar value={0.66} maxValue={1} text={`${0.66 * 100}%`} />
-        </div>
-        <div style={{ width: '20px', height: '20px' }}>
-          <CircularProgressbar value={0.66} maxValue={1} text={`${0.66 * 100}%`} />
-        </div> */}
-      </div>
     </div>
   );
 }

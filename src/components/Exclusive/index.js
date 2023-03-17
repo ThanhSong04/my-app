@@ -1,5 +1,7 @@
 import React from 'react';
 import InfiniteCarousel from 'react-leaf-carousel';
+import { saveAs } from 'file-saver';
+
 import './Exclusive.scss';
 
 function Exclusive() {
@@ -16,6 +18,11 @@ function Exclusive() {
     { img: '/exclusive4.jpg', link: '#' },
     { img: '/exclusive5.jpg', link: '#' },
   ];
+  const download = (url) => {
+    const a = url.split('/');
+    const filename = a[a.length - 1];
+    saveAs(url, filename);
+  };
   return (
     <div className="wrapperExclusive">
       <div className="ExclusiveTitle">
@@ -57,10 +64,10 @@ function Exclusive() {
         {sliderItem.map((item, index) => (
           <div key={index} className="ExclusiveItem">
             <div className="ExclusiveImg">
-              <img alt="Picture 1" src={PublicURL + item.img} />
-              <div className="icon__download">
-                <img src={PublicURL + '/icon__download.png'} />
-              </div>
+              <img alt="" src={PublicURL + item.img} />
+              <button className="icon__download" onClick={() => download(PublicURL + item.img)}>
+                <img alt="" src={PublicURL + '/icon__download.png'} />
+              </button>
             </div>
           </div>
         ))}
