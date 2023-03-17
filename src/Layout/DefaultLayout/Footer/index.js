@@ -1,13 +1,8 @@
 import React from 'react';
 import './Footer.scss';
-import FooterLogo from '../../../assets/img/footer__Logo.png';
-import Facebook from '../../../assets/img/footer_facebook.png';
-import Linkedin from '../../../assets/img/footer_linkedin.png';
-import Twitter from '../../../assets/img/footer_twitter.png';
-import Youtube from '../../../assets/img/footer_youtube.png';
-import language from '../../../assets/img/footer_language.png';
 
 function Footer() {
+  const PublicURL = process.env.PUBLIC_URL;
   return (
     <div className="WarpperFooter">
       <div className="WarpperFooterContent">
@@ -15,27 +10,27 @@ function Footer() {
           <div className="FooterMain">
             <div className="MainLeft">
               <div className="FooterLogo">
-                <img src={FooterLogo} alt="Footer Logo" />
+                <img src={PublicURL + '/footer__Logo.png'} alt="Footer Logo" />
               </div>
               <div className="FooterUs">
                 <span className="UsTitle">Follow Us</span>
                 <ul className="FooterSocial">
                   <li className="FooterSocialItem">
-                    <img src={Facebook} />
+                    <img src={PublicURL + '/footer_facebook.png'} />
                   </li>
                   <li className="FooterSocialItem">
-                    <img src={Linkedin} />
+                    <img src={PublicURL + '/footer_linkedin.png'} />
                   </li>
                   <li className="FooterSocialItem">
-                    <img src={Twitter} />
+                    <img src={PublicURL + '/footer_twitter.png'} />
                   </li>
                   <li className="FooterSocialItem">
-                    <img src={Youtube} />
+                    <img src={PublicURL + '/footer_youtube.png'} />
                   </li>
                 </ul>
               </div>
               <div className="language">
-                <img src={language} />
+                <img src={PublicURL + '/footer_language.png'} />
                 <select name="language" id="language">
                   <option className="abc" value="english">
                     English

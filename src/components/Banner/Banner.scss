@@ -1,4 +1,4 @@
-@import '../../../components/GlobalStyles/base';
+@import '../../assets/css/styles.scss';
 
 .BannerWrapper {
   height: 100vh;
@@ -9,7 +9,7 @@
   height: 90%;
   position: relative;
   margin-top: 46px;
-  background: #fff url('../../../assets/img/section1-bg.jpg') center center / cover no-repeat;
+  background: #fff url('../../../public/section1-bg.jpg') center center / cover no-repeat;
 }
 
 .WrapperDescription {

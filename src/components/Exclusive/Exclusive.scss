@@ -1,9 +1,10 @@
-@import '../../../components/GlobalStyles/base';
+@import '../../assets/css/styles.scss';
+
 .EventsPromotionsTitle {
   position: relative;
   left: 20%;
   width: 60%;
-  margin-bottom: 90px;
+  margin-bottom: 30px;
   padding-top: 80px;
   color: #0095f3;
 }
@@ -15,11 +16,14 @@
 .SliderItem {
   margin: 0 6px;
   border-radius: 4px;
+  &:hover {
+    height: 480px;
+  }
 }
 .SliderItemImg {
   position: relative;
   cursor: pointer;
-  height: 530px;
+  height: 450px;
   img {
     height: 100%;
     width: 100%;
@@ -27,18 +31,20 @@
     border-radius: 4px;
   }
   &:hover {
+    height: 480px;
+    transition: 800ms ease-in-out;
+
     img {
       height: 104%;
-      transition: 800ms ease-in-out;
+      transition: 100ms ease-in-out;
     }
   }
 }
 .ItemContent {
   position: absolute;
-  // top: 0;
-  top: 460px;
+  top: 377px;
   padding: 33px;
-  height: inherit;
+  height: 480px;
   text-align: start;
   display: flex;
   flex-direction: column;
@@ -101,21 +107,21 @@
   }
 }
 .wrapperEventsPromotions .InfiniteCarouselArrow {
+  display: none;
   top: 110% !important;
 }
 .wrapperEventsPromotions .InfiniteCarouselArrowPrev {
+  display: none;
   left: 40%;
 }
 .wrapperEventsPromotions .InfiniteCarouselArrowNext {
+  display: none;
   right: 40%;
 }
 .wrapperEventsPromotions .InfiniteCarouselDots {
   bottom: -62px;
 }
 @media (max-width: 676px) {
-  .EventsPromotionsTitle {
-    top: 60px;
-  }
   .SliderItemImg {
     height: 300px;
   }
@@ -137,7 +143,6 @@
           border-bottom: 2px solid $white;
         }
       }
-
       .SliderIcon {
         width: 20px;
         height: 20px;

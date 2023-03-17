@@ -1,13 +1,7 @@
 import React from 'react';
 import './Banner.scss';
-import Share from '../../../assets/img/share.png';
-import Mail from '../../../assets/img/mail.png';
-import Support from '../../../assets/img/support.png';
-import Rating from '../../../assets/img/rating.png';
-import Nintendo from '../../../assets/img/nintendo.png';
-import Microsoft from '../../../assets/img/microsoft.png';
-import Steam from '../../../assets/img/steam.png';
 function Banner() {
+  const PublicURL = process.env.PUBLIC_URL;
   return (
     <div className="BannerWrapper">
       <div className="Banner">
@@ -18,7 +12,7 @@ function Banner() {
               <div className="DescriptionAction">
                 <span>Racing / Action</span>
                 <div className="Rating">
-                  <img src={Rating} alt="Rating" />
+                  <img src={PublicURL + '/rating.png'} alt="Rating" />
                 </div>
               </div>
             </div>
@@ -29,13 +23,13 @@ function Banner() {
           </div>
           <ul className="Social">
             <li className="SocialItem">
-              <img src={Share} />
+              <img src={PublicURL + '/share.png'} />
             </li>
             <li className="SocialItem">
-              <img src={Mail} />
+              <img src={PublicURL + '/mail.png'} />
             </li>
             <li className="SocialItem">
-              <img src={Support} />
+              <img src={PublicURL + '/support.png'} />
             </li>
           </ul>
         </div>
@@ -45,13 +39,13 @@ function Banner() {
           <span className="StoreDownload">Download latest version</span>
           <div className="StoreTrademark">
             <div className="TrademarkItem">
-              <img src={Nintendo} alt="nintendo" />
+              <img src={PublicURL + '/nintendo.png'} alt="nintendo" />
             </div>
             <div className="TrademarkItem">
-              <img src={Microsoft} alt="Microsoft" />
+              <img src={PublicURL + '/microsoft.png'} alt="Microsoft" />
             </div>
             <div className="TrademarkItem">
-              <img src={Steam} alt="steam" />
+              <img src={PublicURL + '/steam.png'} alt="steam" />
             </div>
           </div>
         </div>

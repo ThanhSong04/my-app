@@ -1,19 +1,20 @@
 import React from 'react';
 import './RegisterForm.scss';
 import { useForm } from 'react-hook-form';
-import ImgRegister from '../../../assets/img/ImgRegister.png';
 function RegisterForm() {
+  const PublicURL = process.env.PUBLIC_URL;
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
   const onSubmit = (data) => console.log(data);
+
   return (
     <div className="WrapperRegisterForm">
       <div className="RegisterMain">
         <div className="RegisterImg">
-          <img src={ImgRegister} alt="ImgRegister" />
+          <img src={PublicURL + '/ImgRegister.png'} alt="ImgRegister" />
         </div>
         <div className="RegisterForm">
           <h2 className="FormTitle">Stay in the Know!</h2>

@@ -1,15 +1,15 @@
 import React from 'react';
 import './Header.scss';
-import Logo from '../../../assets/img/Logo.png';
-import Menu from '../../../assets/img/Group_350.png';
+
 function Header() {
+  const PublicURL = process.env.PUBLIC_URL;
   return (
     <header className="Header">
       <div className="HeaderLogo">
-        <img src={Logo} alt="Logo" />
+        <img src={PublicURL + '/Logo.png'} alt="Logo" />
       </div>
       <div className="HeaderMenu">
-        <img src={Menu} alt="Menu" />
+        <img src={PublicURL + '/Group_350.png'} alt="Menu" />
       </div>
     </header>
   );

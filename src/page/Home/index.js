@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import Banner from '../../Layout/components/Banner';
-import RegisterForm from '../../Layout/components/RegisterForm';
-import EventsPromotions from '../../Layout/components/EventsPromotions';
+import React, { useState, useRef } from 'react';
+import Banner from '../../components/Banner';
+import RegisterForm from '../../components/RegisterForm';
+import EventsPromotions from '../../components/EventsPromotions';
 import './Home.scss';
 import Footer from '../../Layout/DefaultLayout/Footer';
 import Menu from '../../components/menu';

@@ -1,4 +1,4 @@
-@import '../../../components/GlobalStyles/base';
+@import '../../../assets/css/base';
 
 .WarpperFooter {
   position: relative;
@@ -90,6 +90,9 @@
     display: block;
     color: $text-color;
     text-decoration: none;
+  }
+  &:hover {
+    text-decoration: underline;
   }
 }
 .FooterBottom {
