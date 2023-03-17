@@ -9,6 +9,7 @@
   color: #0095f3;
 }
 .ExclusiveItem {
+  position: relative;
   height: 450px;
 }
 .ExclusiveImg {
@@ -25,6 +26,16 @@
     border-radius: 4px;
     transform: scale(1.05);
     transition: 400ms ease-in-out;
+  }
+}
+.icon__download {
+  position: absolute;
+  top: 25px;
+  right: 36px;
+  width: 40px;
+  height: 42px;
+  &:hover {
+    opacity: 0.5;
   }
 }
 .wrapperExclusive .InfiniteCarouselArrow {
@@ -48,4 +59,12 @@
 }
 .wrapperExclusive .InfiniteCarouselPaging {
   bottom: -35px;
+}
+@media (max-width: 767px) {
+  .wrapperExclusive .InfiniteCarouselArrowPrev {
+    left: 30%;
+  }
+  .wrapperExclusive .InfiniteCarouselArrowNext {
+    right: 23%;
+  }
 }

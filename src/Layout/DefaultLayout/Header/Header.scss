@@ -1,4 +1,4 @@
-.Header {
+.header {
   padding: 16px 2rem;
   align-items: center;
   background-color: #fff;
@@ -13,24 +13,24 @@
   width: 100%;
   z-index: 3;
 }
-.HeaderLogo img {
+.header__logo img {
   height: 5rem;
   cursor: pointer;
 }
-.HeaderMenu img {
+.header__menu img {
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
 @media (max-width: 767px) {
-  .Header {
+  .header {
     height: 60px;
     padding: 0px 15px;
   }
-  .HeaderLogo img {
+  .header__logo img {
     height: 4rem;
   }
-  .HeaderMenu img {
+  .header__menu img {
     width: 25px;
     height: 25px;
   }

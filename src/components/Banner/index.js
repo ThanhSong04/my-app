@@ -3,15 +3,15 @@ import './Banner.scss';
 function Banner() {
   const PublicURL = process.env.PUBLIC_URL;
   return (
-    <div className="BannerWrapper">
-      <div className="Banner">
-        <div className="WrapperDescription">
-          <div className="Description">
-            <div className="DescriptionTitle">
+    <div className="banner__wrapper">
+      <div className="banner">
+        <div className="wrapper__description">
+          <div className="description">
+            <div className="description__title">
               <h2>Asphalt 9: Legends</h2>
-              <div className="DescriptionAction">
+              <div className="description__action">
                 <span>Racing / Action</span>
-                <div className="Rating">
+                <div className="rating">
                   <img src={PublicURL + '/rating.png'} alt="Rating" />
                 </div>
               </div>

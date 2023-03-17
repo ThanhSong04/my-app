@@ -4,27 +4,27 @@ import './Footer.scss';
 function Footer() {
   const PublicURL = process.env.PUBLIC_URL;
   return (
-    <div className="WarpperFooter">
-      <div className="WarpperFooterContent">
-        <div className="FooterTop">
-          <div className="FooterMain">
-            <div className="MainLeft">
-              <div className="FooterLogo">
+    <div className="warpper__footer">
+      <div className="warpper__footer__content">
+        <div className="footer__top">
+          <div className="footer__main">
+            <div className="main__left">
+              <div className="footer__logo">
                 <img src={PublicURL + '/footer__Logo.png'} alt="Footer Logo" />
               </div>
-              <div className="FooterUs">
-                <span className="UsTitle">Follow Us</span>
-                <ul className="FooterSocial">
-                  <li className="FooterSocialItem">
+              <div className="footer__us">
+                <span className="us__title">Follow Us</span>
+                <ul className="footer__social">
+                  <li className="footer__social__item">
                     <img src={PublicURL + '/footer_facebook.png'} />
                   </li>
-                  <li className="FooterSocialItem">
+                  <li className="footer__social__item">
                     <img src={PublicURL + '/footer_linkedin.png'} />
                   </li>
-                  <li className="FooterSocialItem">
+                  <li className="footer__social__item">
                     <img src={PublicURL + '/footer_twitter.png'} />
                   </li>
-                  <li className="FooterSocialItem">
+                  <li className="footer__social__item">
                     <img src={PublicURL + '/footer_youtube.png'} />
                   </li>
                 </ul>
@@ -40,55 +40,55 @@ function Footer() {
                 </select>
               </div>
             </div>
-            <div className="LinksOther">
-              <div className="LinksOtherItem">
-                <h3 className="LinksOtherTitle">visit</h3>
-                <ul className="LinkList">
-                  <li className="LinkListItem">
+            <div className="links__other">
+              <div className="links__other__item">
+                <h3 className="links__other__title">visit</h3>
+                <ul className="link__list">
+                  <li className="link__list__item">
                     <a href="#">Gameloft Games</a>
                   </li>
-                  <li className="LinkListItem">
+                  <li className="link__list__item">
                     <a href="#">Gameloft Careers </a>
                   </li>
-                  <li className="LinkListItem">
+                  <li className="link__list__item">
                     <a href="#">Gameloft News</a>
                   </li>
-                  <li className="LinkListItem">
+                  <li className="link__list__item">
                     <a href="#">Gameloft Forum</a>
                   </li>
-                  <li className="LinkListItem">
+                  <li className="link__list__item">
                     <a href="#">Gameloft Corporate</a>
                   </li>
-                  <li className="LinkListItem">
+                  <li className="link__list__item">
                     <a href="#">Gameloft Advertising</a>
                   </li>
-                  <li className="LinkListItem">
+                  <li className="link__list__item">
                     <a href="#">Gameloft Support</a>
                   </li>
                 </ul>
               </div>
-              <div className="LinksOtherItem">
-                <h3 className="LinksOtherTitle">LEGAL</h3>
-                <ul className="LinkList">
-                  <li className="LinkListItem">
+              <div className="links__other__item">
+                <h3 className="links__other__title">LEGAL</h3>
+                <ul className="link__list">
+                  <li className="link__list__item">
                     <a href="#"> Terms of Use</a>
                   </li>
-                  <li className="LinkListItem">
+                  <li className="link__list__item">
                     <a href="#">Privacy Policy</a>
                   </li>
-                  <li className="LinkListItem">
+                  <li className="link__list__item">
                     <a href="#">Cookies Policy</a>
                   </li>
-                  <li className="LinkListItem">
+                  <li className="link__list__item">
                     <a href="#">EULA</a>
                   </li>
-                  <li className="LinkListItem">
+                  <li className="link__list__item">
                     <a href="#">Legal Notices</a>
                   </li>
-                  <li className="LinkListItem">
+                  <li className="link__list__item">
                     <a href="#">Event Rules</a>
                   </li>
-                  <li className="LinkListItem">
+                  <li className="link__list__item">
                     <a href="#">Business Contacts</a>
                   </li>
                 </ul>
@@ -96,7 +96,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="FooterBottom">
+        <div className="footer__bottom">
           <p>
             ©2020 Gameloft. All rights reserved. Gameloft and the Gameloft logo are trademarks of Gameloft in the U.S.
             and/or other countries. <br />

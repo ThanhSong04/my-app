@@ -1,61 +1,61 @@
-import { useCallback, useEffect, useState } from 'react';
-import { useDetectScroll } from '@smakss/react-scroll-direction';
+import { useState } from 'react';
+import ReactScrollWheelHandler from 'react-scroll-wheel-handler';
+import ScrollTo from 'react-scroll-into-view';
 import './DefaultLayout.scss';
 import Header from './Header';
-import Footer from './Footer';
-
 function DefaultLayout({ children }) {
   let [sectionId, setSectionId] = useState(1);
-  useEffect(() => {
-    const threshold = 30;
-    let lastScrollY = window.pageYOffset;
-    let ticking = false;
-
-    const increase = () => {
-      sectionId++;
-      if (sectionId > 5) {
-        sectionId = 5;
-      }
-      const element = document.getElementById(`card${sectionId}`);
-      element.scrollIntoView();
-      return sectionId;
-    };
-
-    const decrease = () => {
-      sectionId--;
-      if (sectionId < 1) {
-        sectionId = 1;
-      }
-      const element = document.getElementById(`card${sectionId}`);
-      element.scrollIntoView();
-      return sectionId;
-    };
-    const updateSectionId = () => {
-      const scrollY = window.pageYOffset;
-      if (Math.abs(scrollY - lastScrollY) < threshold) {
-        ticking = false;
-        return;
-      }
-      setSectionId(scrollY > lastScrollY ? increase() : decrease());
-      lastScrollY = scrollY > 0 ? scrollY : 0;
-      ticking = false;
-    };
-
-    const onScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(updateSectionId);
-        ticking = true;
-      }
-    };
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, [sectionId]);
+  const increase = () => {
+    sectionId--;
+    if (sectionId < 1) {
+      return (sectionId = 1);
+    }
+    const element = document.getElementById(`card${sectionId}`);
+    element.scrollIntoView();
+    setSectionId(sectionId);
+  };
+  const decrease = () => {
+    sectionId++;
+    console.log('sectionId--', sectionId);
+    if (sectionId > 5) {
+      return (sectionId = 5);
+    }
+    const element = document.getElementById(`card${sectionId}`);
+    element.scrollIntoView();
+    setSectionId(sectionId);
+  };
   return (
     <>
+      <nav id="menu">
+        <ul>
+          {Array.from({ length: 5 }, (_, i) => i + 1).map((section) => {
+            return (
+              <li key={section}>
+                <ScrollTo selector={`#card${section}`}>
+                  <button className={`${sectionId === section ? 'menu--active' : ''}`}></button>
+                </ScrollTo>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+      <ReactScrollWheelHandler
+        upHandler={() => {
+          increase();
+        }}
+        downHandler={() => {
+          decrease();
+        }}
+        customStyle={{
+          width: '150%',
+          height: '100vh',
+        }}
+      >
+        <div className="Container">
+          <div className="Content">{children}</div>
+        </div>
+      </ReactScrollWheelHandler>
       <Header />
-      <div className="Container">
-        <div className="Content">{children}</div>
-      </div>
     </>
   );
 }

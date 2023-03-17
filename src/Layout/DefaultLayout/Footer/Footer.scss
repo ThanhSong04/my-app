@@ -1,19 +1,19 @@
 @import '../../../assets/css/base';
 
-.WarpperFooter {
+.warpper__footer {
   position: relative;
   width: 100%;
   height: 850px;
   margin-top: 100px;
   background-color: $primary-color;
 }
-.FooterTop {
+.footer__top {
   padding: 143px 380px;
 }
-.FooterLogo {
+.footer__logo {
   margin: -31px 0 37px -28px;
 }
-.FooterMain {
+.footer__main {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -21,19 +21,19 @@
   left: 20%;
   width: 60%;
 }
-.UsTitle {
+.us__title {
   font-size: 25px;
   font-weight: bold;
 }
-.FooterSocial {
+.footer__social {
   list-style: none;
   margin-top: 24px;
   margin-bottom: 32px;
   display: flex;
   align-items: center;
 }
-.FooterSocialItem {
-  & + .FooterSocialItem {
+.footer__social__item {
+  & + .footer__social__item {
     margin-left: 19px;
   }
   &:hover img {
@@ -70,20 +70,20 @@
     padding: 20px;
   }
 }
-.LinksOtherItem {
-  & + .LinksOtherItem {
+.links__other__item {
+  & + .links__other__item {
     margin-top: 50px;
   }
 }
-.LinksOtherTitle {
+.links__other__title {
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
 }
-.LinkList {
+.link__list {
   margin-top: 37px;
 }
-.LinkListItem {
+.link__list__item {
   list-style: none;
   a {
     line-height: 26px;
@@ -95,7 +95,7 @@
     text-decoration: underline;
   }
 }
-.FooterBottom {
+.footer__bottom {
   width: 100%;
   height: 100px;
   position: absolute;
@@ -110,32 +110,32 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .FooterMain {
+  .footer__main {
     width: 70%;
   }
 }
 @media (max-width: 767px) {
-  .WarpperFooter {
+  .warpper__footer {
     padding: 0 20px;
     height: 518px;
   }
   .language,
-  .FooterUs {
+  .footer__us {
     display: none;
   }
-  .FooterTop {
+  .footer__top {
     padding: 0;
   }
-  .FooterMain {
+  .footer__main {
     position: unset;
     flex-direction: column;
     width: 100%;
   }
-  .MainLeft {
+  .main__left {
     display: flex;
     justify-content: center;
   }
-  .FooterLogo {
+  .footer__logo {
     width: 274px;
     height: 85px;
     margin: unset;
@@ -145,14 +145,14 @@
       object-fit: cover;
     }
   }
-  .LinksOther {
+  .links__other {
     display: flex;
     justify-content: space-between;
-    .LinksOtherItem {
+    .links__other__item {
       margin-top: unset;
     }
   }
-  .FooterBottom {
+  .footer__bottom {
     position: unset;
     border: none;
     margin-top: 45px;

@@ -11,6 +11,10 @@ function Exclusive() {
     { img: '/exclusive4.jpg', link: '#' },
     { img: '/exclusive5.jpg', link: '#' },
     { img: '/exclusive6.jpg', link: '#' },
+    { img: '/exclusive2.jpg', link: '#' },
+    { img: '/exclusive3.jpg', link: '#' },
+    { img: '/exclusive4.jpg', link: '#' },
+    { img: '/exclusive5.jpg', link: '#' },
   ];
   return (
     <div className="wrapperExclusive">
@@ -54,6 +58,9 @@ function Exclusive() {
           <div key={index} className="ExclusiveItem">
             <div className="ExclusiveImg">
               <img alt="Picture 1" src={PublicURL + item.img} />
+              <div className="icon__download">
+                <img src={PublicURL + '/icon__download.png'} />
+              </div>
             </div>
           </div>
         ))}
