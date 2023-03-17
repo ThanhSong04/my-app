@@ -41,8 +41,8 @@ function EventsPromotions() {
         animationDuration={1000}
         swipe={false}
         showSides={true}
-        slidesToScroll={4}
-        slidesToShow={4}
+        slidesToScroll={1}
+        slidesToShow={1}
         sideSize={1}
         scrollOnDevice={true}
         autoCycle={true}

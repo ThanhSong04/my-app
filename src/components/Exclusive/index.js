@@ -50,7 +50,7 @@ function Exclusive() {
         sideSize={1}
         scrollOnDevice={true}
         autoCycle={true}
-        cycleInterval={3000}
+        cycleInterval={5000}
         slidesSpacing={12}
         paging={true}
       >
