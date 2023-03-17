@@ -1,5 +1,9 @@
 @import '../../assets/css/styles.scss';
 
+.wrapperEventsPromotions {
+  background-color: $sub-color;
+  padding-bottom: 64px;
+}
 .EventsPromotionsTitle {
   position: relative;
   left: 20%;
@@ -17,7 +21,8 @@
   margin: 0 6px;
   border-radius: 4px;
   &:hover {
-    height: 480px;
+    transform: scale(1.06);
+    transition: 800ms ease-in-out;
   }
 }
 .SliderItemImg {
@@ -30,21 +35,11 @@
     object-fit: cover;
     border-radius: 4px;
   }
-  &:hover {
-    // height: 480px;
-    transition: 800ms ease-in-out;
-    transform: scale(1.1);
-
-    img {
-      height: 104%;
-      transition: 100ms ease-in-out;
-    }
-  }
 }
 .ItemContent {
   position: absolute;
   top: 377px;
-  padding: 33px;
+  padding: 33px 33px 60px;
   height: 480px;
   text-align: start;
   display: flex;
@@ -80,11 +75,11 @@
 }
 .SliderItem:hover {
   .ItemContent {
+    border-radius: 4px;
     top: 0;
     transition: 400ms ease-in-out;
     background-color: #8a1445;
     opacity: 0.8;
-    border-radius: 4px;
   }
   .SliderIcon {
     display: block;
@@ -107,21 +102,21 @@
     color: #000;
   }
 }
-.wrapperEventsPromotions .InfiniteCarouselArrow {
-  display: none;
-  top: 110% !important;
-}
-.wrapperEventsPromotions .InfiniteCarouselArrowPrev {
-  display: none;
-  left: 40%;
-}
-.wrapperEventsPromotions .InfiniteCarouselArrowNext {
-  display: none;
-  right: 40%;
-}
-.wrapperEventsPromotions .InfiniteCarouselDots {
-  bottom: -62px;
-}
+// .wrapperEventsPromotions .InfiniteCarouselArrow {
+//   display: none;
+//   top: 110% !important;
+// }
+// .wrapperEventsPromotions .InfiniteCarouselArrowPrev {
+//   display: none;
+//   left: 40%;
+// }
+// .wrapperEventsPromotions .InfiniteCarouselArrowNext {
+//   display: none;
+//   right: 40%;
+// }
+// .wrapperEventsPromotions .InfiniteCarouselDots {
+//   bottom: -62px;
+// }
 .wrapperEventsPromotions .InfiniteCarouselFrame {
   width: 100%;
   overflow: hidden;
@@ -142,6 +137,7 @@
     right: 28%;
   }
   .ItemContent {
+    height: 100%;
     .Heading {
       h3 {
         font-size: 12px;
@@ -164,5 +160,8 @@
       font-size: 14px;
       margin-top: 10px;
     }
+  }
+  .EventsPromotionsTitle {
+    margin-bottom: 0;
   }
 }

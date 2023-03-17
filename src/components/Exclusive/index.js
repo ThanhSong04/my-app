@@ -2,19 +2,20 @@ import React from 'react';
 import InfiniteCarousel from 'react-leaf-carousel';
 import './Exclusive.scss';
 
-function EventsPromotions() {
+function Exclusive() {
   const PublicURL = process.env.PUBLIC_URL;
   const sliderItem = [
-    { img: '/GangstarVegasJessie.png', link: '#' },
-    { img: '/events_promotions1.png', link: '#' },
-    { img: '/events_promotions2.png', link: '#' },
-    { img: '/events_promotions3.png', link: '#' },
-    { img: '/events_promotions4.jpg', link: '#' },
+    { img: '/exclusive1.jpg', link: '#' },
+    { img: '/exclusive2.jpg', link: '#' },
+    { img: '/exclusive3.jpg', link: '#' },
+    { img: '/exclusive4.jpg', link: '#' },
+    { img: '/exclusive5.jpg', link: '#' },
+    { img: '/exclusive6.jpg', link: '#' },
   ];
   return (
-    <div className="wrapperEventsPromotions">
-      <div className="EventsPromotionsTitle">
-        <h2>Special Events & Promotional</h2>
+    <div className="wrapperExclusive">
+      <div className="ExclusiveTitle">
+        <h2>Exclusive Game Content</h2>
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
           <br /> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.
@@ -40,35 +41,19 @@ function EventsPromotions() {
         ]}
         animationDuration={1000}
         swipe={false}
-        showSides={true}
-        slidesToScroll={4}
-        slidesToShow={4}
+        slidesToScroll={1}
+        slidesToShow={1}
         sideSize={1}
         scrollOnDevice={true}
         autoCycle={true}
-        className="WrapperSlider"
         cycleInterval={3000}
-        slidesSpacing={5}
+        slidesSpacing={12}
+        paging={true}
       >
         {sliderItem.map((item, index) => (
-          <div key={index} className="SliderItem">
-            <div className="SliderItemImg">
+          <div key={index} className="ExclusiveItem">
+            <div className="ExclusiveImg">
               <img alt="Picture 1" src={PublicURL + item.img} />
-              <div className="ItemContent">
-                <div className="ItemHeading">
-                  <div className="Heading">
-                    <h3>short title here</h3>
-                    <img className="SliderIcon" src={PublicURL + '/share.png'} />
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore ...
-                  </p>
-                </div>
-                <a href={item.link} className="ItemBtn">
-                  Read More
-                </a>
-              </div>
             </div>
           </div>
         ))}
@@ -77,4 +62,4 @@ function EventsPromotions() {
   );
 }
 
-export default EventsPromotions;
+export default Exclusive;

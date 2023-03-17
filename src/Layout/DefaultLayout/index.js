@@ -13,8 +13,8 @@ function DefaultLayout({ children }) {
 
     const increase = () => {
       sectionId++;
-      if (sectionId > 4) {
-        sectionId = 4;
+      if (sectionId > 5) {
+        sectionId = 5;
       }
       const element = document.getElementById(`card${sectionId}`);
       element.scrollIntoView();
@@ -47,7 +47,6 @@ function DefaultLayout({ children }) {
         ticking = true;
       }
     };
-
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, [sectionId]);
